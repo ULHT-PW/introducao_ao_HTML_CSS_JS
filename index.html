@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>PW</title>
+
+    <!-- CSS - Cascade Style Sheet -->
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        h1 {
+            color: purple;
+        }
+
+        img {
+            float: right;
+        }
+
+        img:hover {
+            transform: rotate(20deg);
+        }
+    </style>
+
+
+    <script>
+        
+
+        function mudarDeCor() {
+            const body = document.querySelector('body');
+            if (body.style.backgroundColor == '' || body.style.backgroundColor == 'aquamarine')
+                body.style.backgroundColor = 'pink'
+            else
+                body.style.backgroundColor = 'aquamarine'
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <h1>Programação Web</h1>
+
+    <p>Bem-vindos a programação Web!🥳 </p>
+
+    <img src="pw.png" alt="">
+
+    <p>Lista de tecnologias:</p>
+
+    <ol>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python e Django</li>
+    </ol>
+
+    <p>Para saber mais, pesquise no
+        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=9482">Moodle</a>
+    </p>
+
+    <p>Pesquise:</p>
+
+    <form action="https://www.google.com/search?">
+
+        <input type="text" name="q">
+        <input type="submit">
+    </form>
+
+    <button onclick="mudarDeCor()">Mudar de cor</button>
+</body>
+
+</html>
