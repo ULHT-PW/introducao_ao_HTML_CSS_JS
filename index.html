@@ -1,41 +1,20 @@
 <html>
-
 <head>
     <title>PW</title>
 
     <!-- CSS - Cascade Style Sheet -->
     <style>
-        
         h1 {
             color: purple;
         }
-
         img {
             float: right;
         }
-
         img:hover {
             transform: rotate(20deg);
         }
     </style>
-
-
-    <script>
-        
-
-        function mudarDeCor() {
-            const body = document.querySelector('body');
-            if (body.style.backgroundColor == 'aquamarine')
-                body.style.backgroundColor = 'pink'
-            else
-                body.style.backgroundColor = 'aquamarine'
-
-        }
-    </script>
-
-
 </head>
-
 <body style="background-color: aquamarine;">
     <h1>Programação Web</h1>
 
@@ -43,26 +22,32 @@
 
     <img src="pw.png" alt="">
 
-    <p>Lista de tecnologias:</p>
+    <p>Lista de tecnologias que aprenderemos:</p>
 
     <ol>
         <li>HTML, CSS, JavaScript</li>
         <li>Python e Django</li>
     </ol>
 
-    <p>Para saber mais, pesquise no
+    <p>Para saber mais, consulte o
         <a href="https://moodle.ensinolusofona.pt/course/view.php?id=9482">Moodle</a>
     </p>
 
-    <p>Pesquise:</p>
-
     <form action="https://www.google.com/search?">
-
         <input type="text" name="q">
-        <input type="submit">
+        <input type="submit" name="oi" value="Pesquise">
     </form>
 
     <button onclick="mudarDeCor()">Mudar de cor</button>
-</body>
 
+    <script>
+        function mudarDeCor() {
+            const body = document.querySelector('body');
+            if (body.style.backgroundColor == 'aquamarine')
+                body.style.backgroundColor = 'pink'
+            else
+                body.style.backgroundColor = 'aquamarine'
+        }
+    </script>
+</body>
 </html>
