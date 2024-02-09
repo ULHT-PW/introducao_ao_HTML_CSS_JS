@@ -5,10 +5,7 @@
 
     <!-- CSS - Cascade Style Sheet -->
     <style>
-        body {
-            background-color: aquamarine;
-        }
-
+        
         h1 {
             color: purple;
         }
@@ -28,7 +25,7 @@
 
         function mudarDeCor() {
             const body = document.querySelector('body');
-            if (body.style.backgroundColor == '' || body.style.backgroundColor == 'aquamarine')
+            if (body.style.backgroundColor == 'aquamarine')
                 body.style.backgroundColor = 'pink'
             else
                 body.style.backgroundColor = 'aquamarine'
@@ -39,7 +36,7 @@
 
 </head>
 
-<body>
+<body style="background-color: aquamarine;">
     <h1>Programação Web</h1>
 
     <p>Bem-vindos a programação Web!🥳 </p>
